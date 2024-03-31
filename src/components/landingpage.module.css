@@ -1,0 +1,51 @@
+.headd{
+    background: #CCD9CC;
+    height: 103px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.uldesign{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    gap: 30px;
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 50px;
+}
+.lione{
+    color: #6C6C6C;
+}
+.dropdown{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+}
+.sectionone{
+    background: linear-gradient(
+        to bottom,
+        #598158, #233607
+    );
+    height: 580px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+}
+.sectionone p {
+    margin: 0;
+}
+.divonep{
+    color: #ffffff;
+    font-size: 45px;
+}
+.divoneptwo{
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 100px;
+}
