@@ -1,0 +1,51 @@
+.cta-container {
+  color: white;
+  background: #233607;
+}
+.cta-inner-div {
+  margin: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.cta-header {
+  font-size: 2rem;
+  padding-bottom: 14px;
+}
+
+.cta-mission{
+  font-size: 1.15rem;
+}
+
+.cta-btns{
+margin-top: 10px;
+padding-top: 20px;
+}
+.cta-btn {
+  border: none;
+  padding: 10px 20px;
+  color: #233607;
+  font-weight: 770;
+  background-color: orange;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cta-sec-btn {
+  border: none;
+  padding: 10px 20px;
+  font-weight: 770;
+  color: orange;
+  background-color: white;
+  border: 1px solid orange;
+  border-radius: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.cta-content {
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    padding-bottom: 20px;
+    /* font-weight: bold; */
+}
