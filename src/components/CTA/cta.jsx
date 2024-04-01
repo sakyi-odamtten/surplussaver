@@ -1,5 +1,6 @@
 import React from "react";
 import "./cta.css";
+import lastland from '../shots/lastland.svg'
 
 const Cta = () => {
   return (
@@ -21,7 +22,7 @@ const Cta = () => {
             <button className="cta-sec-btn">Volunteer</button>
           </div>
         </div>
-        <div></div>
+        <img src={lastland} alt="the last pic on landing page" />
       </div>
     </div>
   );
