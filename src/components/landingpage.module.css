@@ -5,6 +5,12 @@
     align-items: center;
     justify-content: space-around;
 }
+.headd div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
 
 .uldesign{
     display: flex;
@@ -17,6 +23,15 @@
 }
 .lione{
     color: #6C6C6C;
+}
+.buttonzero{
+    background-color: #FE992D;
+    color: #233607;
+    font-weight: bold;
+    width: 175px;
+    height: 49px;
+    border-radius: 4px;
+    border: none;
 }
 .dropdown{
     border: solid black;
@@ -84,8 +99,8 @@
 .initiate{
     color: #233607;
     text-align: center;
-    font-size: 40px;
-    font-weight: 600px;
+    font-size: 50px;
+    font-weight: 800px;
     padding: 30px;
 }
 .divtbuttons{
@@ -102,6 +117,7 @@
     border-radius: 7px;
     width: 241px;
     height: 49px;
+    font-weight: bold;
 }
 .change{
     background-color: #FE992D;
@@ -110,7 +126,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     margin-left: 150px; 
     margin-top: 50px;   
     padding: 10px;
@@ -120,6 +136,9 @@
 .changetittle{
     font-size: 35px;
     font-weight: bold;
+}
+.changepic{
+    padding-left: 30px;
 }
 .bakpic{
     display: flex;

@@ -1,12 +1,13 @@
 import React from "react";
 import "./Footer.css";
 import logo from './logo.svg';
+import Vector from '../shots/Vector.svg';
 
 const Footer = () => {
   return (
     <div className="footer-container">
+      <img src={Vector} alt="a cloud pic" />
       <div className="footer-inner-div">
-        
           <img src={logo} />
           <div className="footer-content">
             <div className="footer-impact">
@@ -41,9 +42,9 @@ const Footer = () => {
               <p>Phone: 841-89261892689</p>
               <p>Address: </p>
             </div>
-          </div>
-        
+          </div>        
       </div>
+      <img src={Vector} alt="a cloud pic"  className='cloud'/>
     </div>
   );
 };

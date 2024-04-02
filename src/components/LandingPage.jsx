@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import style from './landingpage.module.css';
 import logo from './logo.svg';
 import imgone from './imgone.svg';
@@ -9,28 +9,52 @@ import Donation from './shots/Donation.svg';
 import HandShake from './shots/HandShake.svg';
 import Volunteer from './shots/Volunteer.svg';
 
-const content = [
-    {pic:SlideOne, tittle:'Fight Hunger', content: 'We provide a seamless platform for <br />restaurants and individuals to donate surplus<br /> food. Every meal donated through <br />SurplusSaver goes directly to those in need, <br />helping to combat hunger and malnutrition.', background:"#FE992D"},
-    {pic:vegetables, tittle:'Reduce Food Waste', content:"By diverting surplus food from landfills, we're <br />reducing harmful methane emissions and<br /> taking a step towards a greener, more <br />sustainable future.", background:"#9A0A0D"},
-    {pic:giving, tittle:'Community Impact', content:"Join us in making a tangible difference in our <br />communities. Whether you're a restaurant with<br /> excess food or an individual wanting to <br />contribute, SurplusSaver provides the platform<br /> to do so easily and efficiently.", background:"#FE992D"}
-];
-const contindex = 0;
 const LandingPage = () => {
-    const rotcontent = document.getElementsByClassName("change");
-    function rotatet () {
-        //pass
-    }
+    const content = [
+        {pic:SlideOne, tittle:'Fight Hunger', contentt: 'We provide a seamless platform for restaurants and individuals to donate surplus food. Every meal donated through SurplusSaver goes directly to those in need, helping to combat hunger and malnutrition.', background:"#FE992D"},
+        {pic:vegetables, tittle:'Reduce Food Waste', contentt:"By diverting surplus food from landfills, we're <br />reducing harmful methane emissions and<br /> taking a step towards a greener, more <br />sustainable future.", background:"#9A0A0D"},
+        {pic:giving, tittle:'Community Impact', contentt:"Join us in making a tangible difference in our <br />communities. Whether you're a restaurant with<br /> excess food or an individual wanting to <br />contribute, SurplusSaver provides the platform<br /> to do so easily and efficiently.", background:"#FE992D"}
+    ];
+    
+    const changet = useRef(null);
+    const changepict = useRef(null);
+    const changetittlet = useRef(null);
+    const changetextt = useRef(null);
+    const buton = useRef(Array(3).fill(null).map(() => React.createRef()));
+
+    function handleClick({contindex}){
+        const maindiv = changet.current;
+        maindiv.style.background = content[contindex].background;
+        const piceeone = changepict.current;
+        piceeone.src = content[contindex].pic;
+        const tite = changetittlet.current;
+        tite.textContent = content[contindex].tittle;
+        const text = changetextt.current;
+        text.innerHTMl = content[contindex].contentt;
+        
+        buton.current.forEach(ref => {
+            ref.style.background = '#FFFFFF';
+            ref.style.color = '#FE992D';
+        });
+
+        buton.current[contindex].style.background = "#FE992D";
+        buton.current[contindex].style.color = '#233607';
+    };
+
     return (
         <>
             <header className={style.headd}>
                 <img src={logo} alt="the organization's logo" />
 
-                <ul className={style.uldesign}>
-                    <li className={style.lione}>HOME</li>
-                    <li>ABOUT US <i className={style.dropdown}></i></li>
-                    <li>CONTACT US <i className={style.dropdown}></i></li>
-                    <li>FAQ </li>
-                </ul>
+                <div>
+                    <ul className={style.uldesign}>
+                        <li className={style.lione}>HOME</li>
+                        <li>ABOUT US <i className={style.dropdown}></i></li>
+                        <li>CONTACT US <i className={style.dropdown}></i></li>
+                        <li>FAQ </li>
+                    </ul>
+                    <button className={style.buttonzero}>Request Meal</button>
+                </div>
             </header>
             <section className={style.sectionone}>
                 <div className={style.divone}>
@@ -50,17 +74,17 @@ const LandingPage = () => {
                     Our Initiatives
                 </p>
                 <div className={style.divtbuttons}>
-                    <button className={style.buttonthree}>Fight Hunger</button>
-                    <button className={style.buttonthree}>Reduce Food Waste</button>
-                    <button className={style.buttonthree}>Community Impact</button>
+                    <button className={style.buttonthree} onClick={() => handleClick({ contindex: 0 })} ref= { (el) => (buton.current[0] = el) }>Fight Hunger</button>
+                    <button className={style.buttonthree} onClick={() => handleClick({ contindex: 1 })} ref= { (el) => (buton.current[1] = el) }>Reduce Food Waste</button>
+                    <button className={style.buttonthree} onClick={() => handleClick({ contindex: 2 })} ref= { (el) => (buton.current[2] = el) } >Community Impact</button>
                 </div>
-                <div className={style.change}>
-                    <img src={SlideOne} alt=" a pic of a lady eating" className={style.changepic}/>
+                <div className={style.change} ref={ changet }>
+                    <img src={SlideOne} alt=" a pic of a lady eating" className={style.changepic} ref={ changepict }/>
                     <div className={style.changecontent}>
-                        <p className={style.changetittle}>Fight Hunger</p>
-                        <p className={style.changetext}>
-                            We provide a seamless platform for <br />restaurants and individuals to donate surplus <br /> food.
-                            Every meal donated through <br />SurplusSaver goes directly to those in need, <br />
+                        <p className={style.changetittle} ref={changetittlet}>Fight Hunger</p>
+                        <p className={style.changetext} ref={changetextt}>
+                            We provide a seamless platform for restaurants and individuals to donate surplus food.
+                            Every meal donated through SurplusSaver goes directly to those in need, 
                             helping to combat hunger and malnutrition. 
                         </p>
                     </div>
