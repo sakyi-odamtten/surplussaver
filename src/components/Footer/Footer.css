@@ -61,3 +61,21 @@ a{
 .cloud{
   margin-left: 1180px;
 }
+
+@media screen and (max-width : 768px){
+  .footer-inner-div{
+    flex-direction: column;
+  }
+  .footer-content{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer-impact{
+    font-size: 18px;
+    text-align: left;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}

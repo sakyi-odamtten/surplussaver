@@ -3,9 +3,10 @@
     height: 103px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 20px;
 }
-.headd div {
+.headdiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,16 +42,27 @@
     transform: rotate(40deg);
     -webkit-transform: rotate(40deg);
 }
+.faqname{
+    color: black;
+}
 .sectionone{
     background: linear-gradient(
-        to bottom,
-        #598158, #233607
+        to bottom left,
+        #233607 , #598158
     );
     height: 580px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
+}
+.divoneimage{
+    padding-left: 0;
+    margin-left: 0;
+}
+.divone{
+    padding-right: 0;
+    margin-right: 0;
 }
 .sectionone p {
     margin: 0;
@@ -85,7 +97,7 @@
     height: 49px;
     background-color: #FFFFFF;
     border-radius: 7px;
-    border: #FE992D solid 1px;
+    border: #FE992D solid 3px;
     color: #FE992D;
     font-weight: bold;
 }
@@ -102,6 +114,13 @@
     font-size: 50px;
     font-weight: 800px;
     padding: 30px;
+}
+.initiatet{
+    color: #233607;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800px;
+    padding: 60px 30px 30px 30px;
 }
 .divtbuttons{
     display: flex;
@@ -140,19 +159,70 @@
 .changepic{
     padding-left: 30px;
 }
+.chantest{
+    display: none;
+}
 .bakpic{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 30px;
 }
+.push{
+    padding-top: 55px;
+    color: #9A0A0D;
+    font-size: 35px;
+    font-weight: 100px;
+    padding-left: 15px;
+}
+.backone{
+    background-image: url('./shots/gogle.svg');   
+    width: 325px;
+    height: 362px;    
+    background-repeat: no-repeat;
+}
+.backone div {
+    background-color: rgba(255, 238, 238, 0.6);
+    width: 325px;
+    height: 362px; 
+}
+
+.backtwo{
+    background-image: url('./shots/environ.svg');
+    width: 325px;
+    height: 315px;
+   
+}
+.backtwo div {
+    background-color: rgba(255, 238, 238, 0.6); 
+    width: 325px;
+    height: 315px;
+    
+}
+.backthree{
+    background-image: url('./shots/drinking.svg');
+    width: 325px;
+    height: 315px;
+   
+}
+.backthree div {
+    background-color: rgba(255, 238, 238, 0.6); 
+    width: 325px;
+    height: 315px;
+}
+    
 .cred{
     color: #9A0A0D;
     font-size: 35px;
     font-weight: 100px;
+    padding-top: 10px;
+    padding-left: 15px;
 }
 .backtext{
     font-size: 17px;
+    color:#233607;
+    padding-bottom: 10px;
+    padding-left: 15px;
 }
 .goabout{
     display: flex;
@@ -174,4 +244,154 @@
 }
 .goabouttext{
     font-size: 18px;
+}
+.hambaby{
+    display: none;
+}
+.sectiononen{
+    background: linear-gradient(
+        to bottom,
+        #598158, #233607
+    );
+    height: 580px;
+}
+.fp{
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.fp p {
+    margin: 0;
+    padding: 0;
+}
+.faqdisplay{
+    padding: 15px 0 15px 150px;
+    color: #233603;
+}
+.plas{
+   position: absolute;
+   right: 180px;
+}
+.odip{
+    text-align: justify;
+    padding-right: 190px;
+    font-size: 17px;
+}
+.adoutdamn{
+    height: 452px;
+    margin-top: 0;
+    background: linear-gradient(
+        to bottom,
+        #598158, #233607
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.lasp{
+    margin: 0;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 50px;
+    padding: 100px 50px;
+}
+.otet{
+    display: none;
+}
+
+@media screen and (max-width : 768px) {
+    .headd{
+        height: 80px;
+        justify-content:space-between;
+        padding: 0 15px;
+    }
+    .headd img {
+        width: 100px;
+        height: 50px;
+    }
+    .hambaby{
+        display: block;
+        z-index: 10;
+    } 
+    .headdiv{
+        display: none;
+    }
+    .sectionone{
+        display: flex;
+        flex-direction: column-reverse;
+        /*height: 700px;*/
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .divoneimage img{
+        width: 90vw;
+        height: 40vh;
+        /*position: absolute;*/
+        top: 17vh;
+        margin-top: 15px;
+    }
+    .divonep{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .divoneptwo{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .divobuttons{
+        margin-top: -30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .divtbuttons{
+        display: none;
+    }
+    .change{
+        display: none;
+    }
+    .chantest{
+        display: block;
+        margin-top: 0;
+    }
+    .bakpic{
+        flex-direction: column;
+    }
+    .goabout{
+        flex-direction: column;
+    }
+    .liness{
+        width: 370px;
+    }
+    .faqdisplay{
+        padding-left: 70px;
+    }
+    .plas{
+        position: absolute;
+        right: 100px;
+    }
+    .faqp{
+        font-size: 17px;
+        padding-right: 100px;
+    }
+    .odip{
+        font-size: 12px;
+    }
+    .contactform{
+        display: none;
+    }
+    .otet{
+        display: block;
+        padding-left: 70px;
+        background-color: #6C6C6C;
+    }
 }

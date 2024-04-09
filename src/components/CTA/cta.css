@@ -49,3 +49,24 @@ padding-top: 20px;
     padding-bottom: 20px;
     /* font-weight: bold; */
 }
+@media screen and (max-width : 768px){
+  .cta-inner-div{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cta-inner-div img {
+    display: none;
+  }
+  .cta-header{
+    font-size: 30px;
+    /*font-weight: bold;*/
+    text-align: left;
+    margin-right: 0;
+  }
+  .cta-mission{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 15px;
+    margin-right: 0;
+  }
+}

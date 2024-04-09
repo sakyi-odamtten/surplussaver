@@ -10,13 +10,13 @@ const Footer = () => {
       <div className="footer-inner-div">
           <img src={logo} />
           <div className="footer-content">
-            <div className="footer-impact">
-              Surplus saver alleviate food 
+            <p className="footer-impact">
+             Surplus saver alleviate food 
               insecurity by connecting surplus
               food donors with those in need. 
               reducing food waste and 
               creating a positive social impact
-            </div>
+            </p>
             <div className="footer-links">
               <p>Links</p>
               <div>

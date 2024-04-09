@@ -1,15 +1,17 @@
 import './App.css';
-import LandingPage from './components/LandingPage.jsx';
-import CTA from './components/CTA/cta.jsx';
-import Footer from './components/Footer/Footer.jsx';
+import MainPage from './main.jsx';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FaqPage from './components/FaqPage.jsx';
 
 function App() {
   return (
-    <>
-      <LandingPage />
-      <CTA />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={ <MainPage />}></Route>
+        <Route path='/faq' element={< FaqPage />}></Route>        
+      </Routes>
+    </BrowserRouter>
   );
 }
 

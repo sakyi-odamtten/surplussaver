@@ -8,6 +8,9 @@ import giving from './shots/giving.svg';
 import Donation from './shots/Donation.svg';
 import HandShake from './shots/HandShake.svg';
 import Volunteer from './shots/Volunteer.svg';
+import HamBurger from './HamBurger.jsx';
+import ChangeIt from './change.jsx'
+import { Outlet, Link } from "react-router-dom";
 
 const LandingPage = () => {
     const content = [
@@ -46,15 +49,19 @@ const LandingPage = () => {
             <header className={style.headd}>
                 <img src={logo} alt="the organization's logo" />
 
-                <div>
+                <div className={style.headdiv } >
                     <ul className={style.uldesign}>
                         <li className={style.lione}>HOME</li>
                         <li>ABOUT US <i className={style.dropdown}></i></li>
                         <li>CONTACT US <i className={style.dropdown}></i></li>
-                        <li>FAQ </li>
+                        <li > <Link to= '/faq' className={style.faqname}>FAQ</Link> </li>
                     </ul>
                     <button className={style.buttonzero}>Request Meal</button>
                 </div>
+                <div className={style.hambaby}>
+                    <HamBurger />
+                </div>
+                
             </header>
             <section className={style.sectionone}>
                 <div className={style.divone}>
@@ -89,31 +96,40 @@ const LandingPage = () => {
                         </p>
                     </div>
                 </div>
-                <p className={style.initiate}>Why Surplus Saver</p>
+                 <div className={style.chantest}>
+                    <ChangeIt />
+                 </div>
+                <p className={style.initiatet}>Why Surplus Saver</p>
                 <div className={style.bakpic}>
                     <div className={style.backone}>
-                        <p className={style.cred}>Innovative <br />Approach</p>
-                        <p className={style.backtext}>
-                            Our platform leverages <br />technology to streamline the <br />donation process, 
-                            ensuring that <br />surplus food reaches those who <br /> need it most.
-                        </p>
+                        <div>
+                            <p className={style.push}>Innovative <br />Approach</p>
+                            <p className={style.backtext}>
+                                Our platform leverages <br />technology to streamline the <br />donation process, 
+                                ensuring that <br />surplus food reaches those who <br /> need it most.
+                            </p>
+                        </div>
                     </div>
                     <div className={style.backtwo}>
-                        <p className={style.cred}>Environmental <br />Focus</p>
-                        <p className={style.backtext}>
-                            By reducing food waste, we're not <br /> just fighting hunger; 
-                            we're also <br /> contributing to environmental <br /> sustainability 
-                            and combating <br /> climate change.
-                        </p>
+                        <div>
+                            <p className={style.cred} >Environmental <br />Focus</p>
+                            <p className={style.backtext}>
+                                By reducing food waste, we're not <br /> just fighting hunger; 
+                                we're also <br /> contributing to environmental <br /> sustainability 
+                                and combating <br /> climate change.
+                            </p>
+                        </div>
                     </div>
-                    <div className={style.backtwo}>
-                        <p className={style.cred}>Empowering <br />Communities</p>
-                        <p className={style.backtext}>
-                            SurplusSaver empowers individuals <br /> and businesses to take 
-                            action <br /> against food waste and hunger. <br />Together, 
-                            we're creating a positive <br /> impact on both the lives of those in <br /> need 
-                            and the health of our planet.
-                        </p>
+                    <div className={style.backthree}>
+                        <div>
+                            <p className={style.cred}>Empowering <br />Communities</p>
+                            <p className={style.backtext}>
+                                SurplusSaver empowers individuals <br /> and businesses to take 
+                                action <br /> against food waste and hunger. <br />Together, 
+                                we're creating a positive <br /> impact on both the lives of those in <br /> need 
+                                and the health of our planet.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <p className={style.initiate}>How We Do It</p>
@@ -148,7 +164,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
-
+            <Outlet />
         </>
     )    
 }
