@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
 .headdivd {
     display: flex;
     align-items: center;
@@ -93,6 +99,178 @@
 }
 .form input {
     padding-top: 10px;
+}
+
+.emailimg{
+    padding-left: 600px;
+}
+.emailpone{
+    text-align: center;
+}
+.emailp{
+    text-align: center;
+}
+.emailpsend{
+    text-align: center;
+}
+.emailp{
+    text-align: center;
+}
+.emaibutton{
+    background-color: #FE992D;
+    color: #233607;
+    font-weight: bold;
+    width: 175px;
+    height: 49px;
+    border-radius: 4px;
+    border: none;
+    margin-left: 600px;
+    margin-top: 100px;
+}
+.tback{
+    background: #CCD9CC;
+    height: 640px;
+}
+.tyimg{
+    padding-left: 40px;
+}
+.tflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.tyou{
+    margin-top: -40px;
+    width: 490px;
+    height: 160px;
+}
+.tbox{
+    border-radius: 9px;
+    background-color: #CCD9CC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 558px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 460px;
+}
+.tred{
+    color: #9A0A0D;
+    font-weight: bold;
+    margin-top: 0;
+}
+.tbutton{
+    color: #FE992D;
+    background-color: #FFFFFF;
+    border: 2px solid #FE992D;
+    border-radius: 7px;
+    width: 241px;
+    height: 49px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 9px;
+}
+.fpsec{
+    background: #CCD9CC;
+    margin-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+}
+.fflexp{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+.fppic{
+    height: 570px;
+    display: flex;
+    align-items: flex-start;
+}
+.leftarrow{
+    size: 15px;
+    color: #233607;
+    padding-right: 50px;
+    font-weight: bold;
+}
+.fpp{
+    color: #233607;
+    font-weight: bold;
+    font-size: 30px;
+}
+.fpinputs{
+    width: 413px;
+    height: 46px;
+    border: none;
+    border-radius: 10px;
+    margin-top: -30px;
+    padding-top: 0;
+}
+.dformp form label {
+    color: #233607;
+    text-align: center;
+    margin-bottom: -80px;
+    padding-bottom: 0;
+}
+.fpinputs ::placeholder{
+    color: #CCD9CC;
+    font-size: 15px;
+    margin-left: 50px;
+}
+.fplink{
+    color: #233607;
+    text-align: center;
+    margin-left: 160px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 15px;
+}
+.fpsub{
+    color: #233607;
+    background-color: #FE992D;
+    border: none;
+    border-radius: 10px;
+    width: 413px;
+    height: 46px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.fppone{
+    padding-top: 80px;
+    color: #233607;
+    font-size: 15px;
+}
+.fppone img {
+    width: 130px;
+    padding-bottom: 5px;
+    /*align-self: center;*/
+}
+.gole{
+    padding-left: 130px;
+    padding-right: 40px;
+}
+.fab {
+    background-color: #FFFFFF;
+}
+.fpptwo{
+    color: #233607;
+    font-size: 15px;
+    padding-left: 90px;
+}
+.fplinkp{
+    color: #FE992D;
+}
+.fpptwot{
+    color: #233607;
+    font-size: 15px;
+    padding-left: 100px;
+}
+.dformp form label {
+    font-size: 15px;
+    color: #233607;
 }
 @media screen and (max-width : 768px) {
     .HamburgerMenu{
