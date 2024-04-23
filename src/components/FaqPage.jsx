@@ -4,11 +4,11 @@ import Footer from './Footer/Footer.jsx';
 import logo from './logo.svg'; 
 import { GrAdd } from "react-icons/gr";
 import line from './shots/line.svg';
-import React, { useState, useRef } from 'react';
+import React, { useState} from 'react';
 import FaqForms from './faqform.jsx';
+import { Outlet, Link } from "react-router-dom";
 
 const FaqPage = () => {
-    const pluss = useRef(Array(10).fill(null).map(() => React.createRef()));
     const text = [{question: " What is SurplusSaver? ", faq:'SurplusSaver is a platform dedicated to reducing food waste and addressing food insecurity. We connect restaurants, individuals, and organizations with surplus food to those in need, creating a more sustainable and equitable food system.'},
                    {question: 'How does SurplusSaver work?', faq: 'Restaurants and individuals can donate surplus food through our platform. This food is then distributed to partner organizations such as food banks, shelters, and community centers. Users can also request food assistance or volunteer to help with distribution.'},
                    {question: 'Who can donate food?', faq: 'Any restaurant, catering service, grocery store, or individual with surplus food can donate through SurplusSaver. We accept a wide range of food items, from fresh produce to packaged goods.'},
@@ -34,10 +34,10 @@ const handle = (index) => {
 
                 <div className={style.headdiv } >
                     <ul className={style.uldesign}>
-                        <li className={style.lione}>HOME</li>
+                        <li ><Link to='/' className={style.lione}>HOME</Link></li>
                         <li>ABOUT US <i className={style.dropdown}></i></li>
                         <li>CONTACT US <i className={style.dropdown}></i></li>
-                        <li>FAQ </li>
+                        <li > <Link to= '/faq' className={style.faqname}>FAQ</Link> </li>
                     </ul>
                     <button className={style.buttonzero}>Request Meal</button>
                 </div>
@@ -73,6 +73,7 @@ const handle = (index) => {
                 <FaqForms />
             </div>            
             <Footer />
+            <Outlet />
         </>
     );
 }

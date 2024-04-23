@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import logo from './logo.svg';
 import Vector from '../shots/Vector.svg';
+import { Outlet, Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,18 +22,10 @@ const Footer = () => {
               <p>Links</p>
               <div>
                 <ul>
-                  <li>
-                    <a href="">Home</a>
-                  </li>
-                  <li>
-                    <a href="">Our Stand</a>
-                  </li>
-                  <li>
-                    <a href="">About Us</a>
-                  </li>
-                  <li>
-                    <a href="">FAQ</a>
-                  </li>
+                    <li ><Link to='/' >HOME</Link></li>
+                    <li>ABOUT US </li>
+                    <li>CONTACT US </li>
+                    <li > <Link to= '/faq'>FAQ</Link> </li>
                 </ul>
               </div>
             </div>
@@ -45,6 +38,7 @@ const Footer = () => {
           </div>        
       </div>
       <img src={Vector} alt="a cloud pic"  className='cloud'/>
+      <Outlet />
     </div>
   );
 };
