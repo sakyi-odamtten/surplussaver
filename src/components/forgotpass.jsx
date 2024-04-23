@@ -7,6 +7,7 @@ import google from './shots/google.svg';
 import personnal from './shots/personnal.svg';
 import { Outlet, Link } from "react-router-dom";
 import shortline from './shots/shortline.svg';
+import personal1 from './shots/personal1.svg';
 
 const ForgotPassword = () =>{
     const arrow = <FaAngleLeft className={style.leftarrow}/>
@@ -18,7 +19,7 @@ const ForgotPassword = () =>{
         setinputf(values => ({...values, [name]: value }))
     }
     const handlesubmit = (event) =>{
-        event.preventDefualt();
+        event.preventDefault();
         alert(inputf);
     }
     return (
@@ -26,24 +27,25 @@ const ForgotPassword = () =>{
             <img src={logo} alt="the organization's logo" className={style.tyimg} />
             <div className={style.fflexp}>
                 <img src={personnal} alt="a forgot pic" className={style.fppic} />
+                <img src={personal1} alt="a forgot pic" className={style.under} />
                 <div className={style.dformp}>
                     <p className={style.fpp}>{arrow} Forgot Password</p>
                     <form onSubmit={handlesubmit}>
                         <label>
-                            <p>Enter Email Address</p>
+                            <p className={style.cnone}>Enter Email Address</p>
                             <input type="text" placeholder='Email Address' name = 'email' 
-                             className={style.fpinputs} value={inputf.name || ""}
+                             className={style.fpinputs} value={inputf.email || ""}
                               onChange={handlechangef}/>
                         </label>
                         <br />
-                        <Link className={style.fplink}>Back to sign in</Link>
+                        <Link  to='/signup' className={style.fplink}>Back to sign in</Link>
                         <br />
                         <input type="submit" value="Send" className={style.fpsub} />
                     </form>
                     <p className={style.fppone}><img src={shortline} alt="a line" />Or sign up with <img src={shortline} alt="a line" /></p>
                     <img src={google} alt="a social pic" className={style.gole} />
                     <img src={facebook} alt="a social pic" className={style.fab} />
-                    <p className={style.fpptwo}>Don’t have an account? <Link className={style.fplinkp}>Sign up</Link></p>
+                    <p className={style.fpptwo}>Don’t have an account? <Link to="/signup" className={style.fplinkp}>Sign up</Link></p>
                 </div>
             </div>
             <Outlet />

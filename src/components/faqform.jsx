@@ -11,7 +11,7 @@ const FaqForms = () => {
         setinputs(values => ({...values, [name]: value}))
     }
     const handlesubmit = (event) =>{
-        event.preventDefualt();
+        event.preventDefault();
         alert(inputs);
     }
 

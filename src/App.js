@@ -6,6 +6,8 @@ import EmailVerification from './components/emailverification.jsx';
 import ThankYou from './components/thankyou.jsx';
 import ForgotPassword from './components/forgotpass.jsx';
 import VeriFy from './components/verify.jsx';
+import SignUp from './components/signup.jsx';
+import SignIn from './components/signin.jsx';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         <Route path='/emailverification' element={< EmailVerification />}></Route> 
         <Route path='/thankyou' element = {<ThankYou />}></Route>
         <Route path='/forgotpassword' element={< ForgotPassword />}></Route>  
-        <Route path='/verification' element={< VeriFy/>}></Route>     
+        <Route path='/verification' element={< VeriFy/>}></Route>  
+        <Route path='/signup' element={< SignUp />}></Route>   
+        <Route path='/signin' element={< SignIn />}></Route>   
       </Routes>
     </BrowserRouter>
   );

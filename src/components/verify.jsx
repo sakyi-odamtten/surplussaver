@@ -4,6 +4,7 @@ import { FaAngleLeft } from "react-icons/fa6";
 import { useState } from 'react';
 import padlock from './shots/padlock.svg';
 import { Outlet, Link } from "react-router-dom";
+import padlock1 from './shots/padlock1.svg';
 
 const VeriFy = () =>{
     const arrow = <FaAngleLeft className={style.leftarrow}/>
@@ -15,7 +16,7 @@ const VeriFy = () =>{
         setinputv(values => ({...values, [name]: value }))
     }
     const handlesubmit = (event) =>{
-        event.preventDefualt();
+        event.preventDefault();
         alert(inputv);
     }
     return (
@@ -23,6 +24,7 @@ const VeriFy = () =>{
             <img src={logo} alt="the organization's logo" className={style.tyimg} />
             <div className={style.fflexp} >
                 <img src={padlock} alt="a padlock pic" className={style.fppic}/>
+                <img src={padlock1} alt="a forgot pic" className={style.under} />
                 <div className={style.dformp}>
                     <p className={style.fpp}>{arrow} Verify Code</p>
                     <form onSubmit={handlesubmit}>

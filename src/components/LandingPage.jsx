@@ -15,8 +15,8 @@ import { Outlet, Link } from "react-router-dom";
 const LandingPage = () => {
     const content = [
         {pic:SlideOne, tittle:'Fight Hunger', contentt: 'We provide a seamless platform for restaurants and individuals to donate surplus food. Every meal donated through SurplusSaver goes directly to those in need, helping to combat hunger and malnutrition.', background:"#FE992D"},
-        {pic:vegetables, tittle:'Reduce Food Waste', contentt:"By diverting surplus food from landfills, we're <br />reducing harmful methane emissions and<br /> taking a step towards a greener, more <br />sustainable future.", background:"#9A0A0D"},
-        {pic:giving, tittle:'Community Impact', contentt:"Join us in making a tangible difference in our <br />communities. Whether you're a restaurant with<br /> excess food or an individual wanting to <br />contribute, SurplusSaver provides the platform<br /> to do so easily and efficiently.", background:"#FE992D"}
+        {pic:vegetables, tittle:'Reduce Food Waste', contentt:"By diverting surplus food from landfills, we're reducing harmful methane emissions and taking a step towards a greener, more sustainable future.", background:"#9A0A0D"},
+        {pic:giving, tittle:'Community Impact', contentt:"Join us in making a tangible difference in our communities. Whether you're a restaurant with excess food or an individual wanting to contribute, SurplusSaver provides the platform to do so easily and efficiently.", background:"#FE992D"}
     ];
     
     const changet = useRef(null);
@@ -33,7 +33,7 @@ const LandingPage = () => {
         const tite = changetittlet.current;
         tite.textContent = content[contindex].tittle;
         const text = changetextt.current;
-        text.innerHTMl = content[contindex].contentt;
+        text.textContent = content[contindex].contentt;
         
         buton.current.forEach(ref => {
             ref.style.background = '#FFFFFF';
@@ -51,7 +51,7 @@ const LandingPage = () => {
 
                 <div className={style.headdiv } >
                     <ul className={style.uldesign}>
-                        <li className={style.lione}>HOME</li>
+                        <li ><Link to='/' className={style.lione}>HOME</Link></li>
                         <li>ABOUT US <i className={style.dropdown}></i></li>
                         <li>CONTACT US <i className={style.dropdown}></i></li>
                         <li > <Link to= '/faq' className={style.faqname}>FAQ</Link> </li>
@@ -68,8 +68,8 @@ const LandingPage = () => {
                     <p className={style.divonep}>No waste</p>
                     <p className={style.divoneptwo}>Fighting Food <br />Insecurity Together</p>
                     <div className={style.divobuttons}>
-                        <button className={style.buttonone}>Sign in</button>
-                        <button className={style.buttontwo}>Sign up</button>
+                        <button className={style.buttonone}><Link to='/signin' className={style.buttononelink}>Sign in</Link></button>
+                        <button className={style.buttontwo}><Link to='/signup' className={style.buttontwolink}>Sign up</Link></button>
                     </div>
                 </div>
                 <div className={style.divoneimage}>

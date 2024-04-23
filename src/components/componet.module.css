@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #CCD9CC;
 }
   
 .headdivd {
@@ -100,21 +101,32 @@ html, body {
 .form input {
     padding-top: 10px;
 }
-
+.emaildiv{
+    background-color: #FFFFFF;
+    height: 100vh;
+}
 .emailimg{
-    padding-left: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 42vw;
 }
 .emailpone{
     text-align: center;
+    font-size: 30px;
+    font-weight: bold;
 }
 .emailp{
     text-align: center;
+    font-size: 18px;
 }
 .emailpsend{
     text-align: center;
+    font-size: 18px;
 }
 .emailp{
     text-align: center;
+    font-size: 18px;
 }
 .emaibutton{
     background-color: #FE992D;
@@ -141,6 +153,11 @@ html, body {
     padding-top: 30px;
 }
 .tyou{
+    margin-top: -40px;
+    width: 490px;
+    height: 160px;
+}
+.tyou1{
     margin-top: -40px;
     width: 490px;
     height: 160px;
@@ -179,6 +196,9 @@ html, body {
     padding-bottom: 0;
     height: 100%;
 }
+.under{
+    display: none;
+}
 .fflexp{
     display: flex;
     align-items: flex-start;
@@ -199,7 +219,7 @@ html, body {
 .fpp{
     color: #233607;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
 }
 .fpinputs{
     width: 413px;
@@ -272,6 +292,26 @@ html, body {
     font-size: 15px;
     color: #233607;
 }
+.sp{
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+.fpptwos{
+    color: #233607;
+    font-size: 15px;
+
+}
+.handshake{
+    width: 503px;
+    height: 620px;
+    background-color: #FE992D;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.empety{
+    color: #9A0A0D;
+    font-size: 15px;
+}
 @media screen and (max-width : 768px) {
     .HamburgerMenu{
         position: absolute;
@@ -285,6 +325,7 @@ html, body {
         align-items: start;
         justify-content: space-evenly;
         top: 15vh;
+        right: 4vw;
         position: absolute;
         background: linear-gradient(
         to bottom,
@@ -292,7 +333,10 @@ html, body {
         );
         margin-left: 0;
         height: 70vh;
-        width: 50vw;
+        width: 20vw;
+    }
+    .faqlink{
+        color: black;
     }
     .lioned{
         color: black;
@@ -323,4 +367,224 @@ html, body {
         height: 40vh;
         margin-top: 10px;
     }
+    .tyimg{
+        display: none;
+    }
+    .fflexp{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .handshake{
+        width: 90vw;
+        height: 40vh;
+    }
+    .handshake img{
+        width: 90vw;
+        height: 90vh;
+        margin-top: -100px;
+    }
+    .emaildiv{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .emailimg{
+        padding-left: 30vw;
+    }    
+    .emaibutton{
+        margin: 0;
+    }
+    .tyimg{
+        display: none;
+    }
+    .tbox{
+        width: 300px;
+        height: 350px;
+    }
+    .tyou{
+        margin-top: 0;
+        margin-bottom: -20px;
+        width: 250px;
+    }
+    .tyou1{
+        margin-top: -10px;
+        width: 150px;
+    }
+    .tred{
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .tbutton{
+        margin-top: 10px;
+    }
+    .fppic{
+        display: none;
+    }
+    .under{
+        display: block;
+    }
+    .fab{
+        background-color: #CCD9CC;
+    }
+   
+    
 }
+
+@media screen and (max-width : 500px){
+    .uldesignd{
+        left: 20vh;
+        position: absolute;
+        width: 50vw;
+    } 
+    .changepicd{
+        margin-left: -25px;
+    } 
+    .inbuton{
+        height: 100vh;
+        font-size: 18px;
+    }  
+    .fplink{
+        margin-top: 0;
+        margin-bottom: -20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .leftarrow{
+        padding-right: 0;
+        size: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .fpinputs{
+        width: 250px;
+        height: 46px;
+        margin-bottom: -80px;
+    }
+    .fpsub{
+        width: 250px;
+        height: 46px;  
+        margin-top: -50px;      
+    }
+    .dformp form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .fpp{
+        font-size: 25px;
+        text-align: center;
+    }
+    .sp{
+        font-size: 16px;
+        text-align: center;
+    }
+    .fpptwos{
+        text-align: center;
+    }
+    .fpptwos img{
+        width: 90px;
+        padding-bottom: 5px;
+    }
+    .fppone{
+        padding-top: 50px;
+    }
+    .fppone img{
+        width: 90px;
+        padding-bottom: 5px;
+    }
+    .gole{
+        margin-left: -40px;
+    }
+    .fpptwo{
+        text-align: center;
+        margin-left: -60px;
+    }
+    .tbox{
+        width: 250px;
+    }
+    .cnone{
+        margin-top: -20px;
+    }
+}
+@media screen and (max-width : 400px){
+    .emailimg{
+        padding-left: 20vw;
+    }
+    .tbox{
+        width: 240px;
+        height: 350px;
+    }
+    .tyou{
+        margin-top: 0;
+        margin-bottom: -20px;
+        width: 200px;
+    }
+    .tyou1{
+        margin-top: -40px;
+        width: 150px;
+    }
+    .tred{
+        margin-bottom: 10px;
+        margin-top: -20px;
+        font-size: 12px;
+    }
+    .tbutton{
+        margin-top: 10px;
+        width: 200px;
+    }
+    .form {
+        width: 320px;
+        height: 490px;
+    }
+    .fap{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width : 330px){
+    .uldesignd{
+        left: 20vh;
+        position: absolute;
+        width: 50vw;
+    }
+    .inbuton{
+        height: 110vh;
+        font-size: 15px;
+    }
+    
+    .tbox{
+        width: 210px;
+        height: 350px;
+    }
+    .tyou{
+        margin-top: 0;
+        margin-bottom: -30px;
+        width: 200px;
+    }
+    .tyou1{
+        margin-top: -30px;
+        width: 150px;
+    }
+    .tred{
+        margin-top: -40px;
+        font-size: 12px;
+    }
+    .tbutton{
+        margin-top: -10px;
+        width: 200px;
+    }
+    .under{
+        padding-left: 12px;
+    }
+    .form {
+        width: 290px;
+        height: 490px;
+    }
+    .fap{
+        font-size: 35px;
+    }
+}    

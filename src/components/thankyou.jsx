@@ -11,7 +11,7 @@ const ThankYou = () => {
                 <div className={style.tbox}>
                     <img src={thank} alt="a text" className={style.tyou} />
                     
-                    <img src={you} alt="a text" className={style.tyou}/>
+                    <img src={you} alt="a text" className={style.tyou1}/>
                     <p className={style.tred}>Welcome to SurplusSaver</p>
 
                     <button type='submit' className={style.tbutton}>Continue</button>
