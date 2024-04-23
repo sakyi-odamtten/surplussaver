@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer-container">
       <img src={Vector} alt="a cloud pic" />
       <div className="footer-inner-div">
-          <img src={logo} />
+          <img src={logo} alt="a cloud pic" />
           <div className="footer-content">
             <p className="footer-impact">
              Surplus saver alleviate food 

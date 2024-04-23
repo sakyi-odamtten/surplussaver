@@ -6,7 +6,7 @@ import shortline from './shots/shortline.svg';
 import facebook from './shots/facebook.svg';
 import google from './shots/google.svg';
 import hand from './shots/hand.svg';
-import axios from 'axios';
+//import axios from 'axios';
 
 const SignIn = () =>{
     const [inputs, setinputs] = useState({});
