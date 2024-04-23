@@ -8,11 +8,14 @@ const FaqForms = () => {
         const name = event.target.name;
         const value = event.target.value;
 
-        setinputs(values => ({...values, [name]: value}))
+        setinputs({...inputs, [name]: value })
     }
     const handlesubmit = (event) =>{
         event.preventDefault();
+        console.log(inputs)
         alert(inputs);
+        console.log("okay")
+        setinputs({});
     }
 
     return (
