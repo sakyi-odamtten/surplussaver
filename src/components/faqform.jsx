@@ -13,7 +13,6 @@ const FaqForms = () => {
     const handlesubmit = (event) =>{
         event.preventDefault();
         console.log(inputs)
-        alert(inputs);
         console.log("okay")
         setinputs({});
     }

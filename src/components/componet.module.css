@@ -546,10 +546,15 @@ html, body {
     }
 }
 @media screen and (max-width : 330px){
+    .changepicd{
+        width: 70vw;
+        height: 35vh;
+        margin-top: 0;
+    }
     .uldesignd{
-        left: 20vh;
+        left: 18vh;
         position: absolute;
-        width: 50vw;
+        width: 45vw;
     }
     .inbuton{
         height: 110vh;
@@ -587,4 +592,5 @@ html, body {
     .fap{
         font-size: 35px;
     }
+    
 }    

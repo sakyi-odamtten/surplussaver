@@ -437,6 +437,12 @@
     }
 }
 @media screen and (max-width : 330px){
+    .sectionone{
+        height: 600px;
+    }
+    .divoneimage img {
+        top: 23vh;
+    }
     .initiate{
         font-size: 37px;
     }
@@ -494,7 +500,7 @@
         display: none;
     }
     .liness{
-        width:300px;
+        width:285px;
     }
     .plas{
         right: 30px;
@@ -509,6 +515,6 @@
         font-size: 35px;
     }
     .otet{
-        padding: 0 15px;
+        padding: 0 15px 0 10px;
     }
 }
