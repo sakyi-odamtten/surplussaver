@@ -313,7 +313,67 @@
 .otet{
     display: none;
 }
+.dongrid{
+    display:grid;
+    grid-template-columns: 0.6fr 2.8fr;
 
+}
+.firstnav{
+    display: flex; 
+    flex-direction: column;   
+    background-color: #FFFFFF;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0;
+    /*overflow-y: auto;*/
+    width:260px;
+    padding-top: 15px;
+}
+.firstnav img {
+    margin-top: 0;
+}
+.navul{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: -10px;
+    margin-right: 0;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.navul li button {
+    border: none;
+    background-color: #FFFFFF;
+    height: 54px;
+    width: 220px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: justify;
+    padding-left: 30px;
+}
+.navul li button:hover{
+    background-color: #2C622C;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+.slidebut{
+    width: 120px;
+    height: 49px;
+    background-color: #FE992D;
+    border-radius: 7px;
+    border: #FE992D;
+    color: #233607;
+    font-weight: bold; 
+    position: relative;
+    right: 180px;   
+    top: -30px;
+}
+.slidepic{
+    padding-top: 100px;
+    padding-left: 50px;
+}
 @media screen and (max-width : 768px) {
     .headd{
         height: 80px;

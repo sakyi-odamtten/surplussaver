@@ -57,9 +57,9 @@ const SignIn = () =>{
                         <label >
                             <select name='selectedCategory'  value={inputs.selectedCategory || ""} className={style.fpinputs} onChange={handlechanges}>
                                 <option value="">Select Category</option>
-                                <option value="donate">Donate</option>
-                                <option value="institution">Institution</option>
-                                <option value="individual">Individual</option>
+                                <option value="donate">Donanor</option>
+                                <option value="volunteer">Volunteer</option>
+                                <option value="beneficiary">Beneficiary</option>
                             </select>
                         </label>
                         <br />

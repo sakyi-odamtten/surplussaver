@@ -8,6 +8,7 @@ import ForgotPassword from './components/forgotpass.jsx';
 import VeriFy from './components/verify.jsx';
 import SignUp from './components/signup.jsx';
 import SignIn from './components/signin.jsx';
+import DoNation from './components/donation.jsx';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route path='/forgotpassword' element={< ForgotPassword />}></Route>  
         <Route path='/verification' element={< VeriFy/>}></Route>  
         <Route path='/signup' element={< SignUp />}></Route>   
-        <Route path='/signin' element={< SignIn />}></Route>   
+        <Route path='/signin' element={< SignIn />}></Route> 
+        <Route path='/donation' element={<DoNation />}></Route>  
       </Routes>
     </BrowserRouter>
   );

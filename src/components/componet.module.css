@@ -312,6 +312,19 @@ html, body {
     color: #9A0A0D;
     font-size: 15px;
 }
+.dfarrow{
+    padding-right: 250px;
+}
+.dfp{
+    color: #233607;
+    font-size: 40px;
+    font-weight: 600px;
+}
+.formflex{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 50px;
+}
 @media screen and (max-width : 768px) {
     .HamburgerMenu{
         position: absolute;
